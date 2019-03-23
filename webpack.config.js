@@ -1,9 +1,9 @@
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import path from 'path';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: 'src/index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
@@ -18,15 +18,15 @@ module.exports = {
         use: [{
           loader: 'babel-loader',
           options: {
-            presets: ['env', 'stage-0', 'react']
+            presets: ['@babel/preset-env', '@babel/preset-react']
           }
         }]
       }
     ]
   },
   plugins: [new HtmlWebpackPlugin({
-    template: 'src/index.html',
-    filename: 'src/index.html'
+    template: './src/index.html',
+    filename: 'index.html'
   })
   ]
 };
