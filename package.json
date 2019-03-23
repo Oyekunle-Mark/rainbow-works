@@ -4,7 +4,7 @@
   "description": "This is a react color organizer app that allows user to add, rate and remove hex colors.",
   "main": "index.js",
   "scripts": {
-    "start": "npx webpack-dev-server --open --hot",
+    "start": "npx webpack-dev-server --open",
     "build": "npx webpack"
   },
   "repository": {
