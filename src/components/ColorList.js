@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Color from './Color';
 
 const ColorList = ({ colors, removeColor }) =>
-  <div className="classList">
+  <div className="colorList">
     {
       (colors.length === 0) ?
         <p>No Colors Listed. <small>(Add a Color)</small></p> :

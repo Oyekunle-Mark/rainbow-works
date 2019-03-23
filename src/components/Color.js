@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import StarRating from './StarRating';
 
 const Color = ({ title, color, rating, removeColor }) =>
-  <section className="color">
+  <section className="colorBox">
     <h1>{title}</h1>
     <button onClick={removeColor}>X</button>
-    <div className="color" style={{ backgroundColor: color }}>
+    <div className="color" style={{ backgroundColor: color, width: 100, height: 70 }}>
     </div>
     <div>
       <StarRating starsSelected={rating} />
